@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins&family=Staatliches&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="shortcut icon" href="./icons/favicon.svg" type="image/x-icon" />
+
+    <link rel="stylesheet" href="style.css" />
+    <title>Mentoria</title>
+  </head>
+
+  <body>
+    <div class="page">
+      <header>
+        <h1>Mentoria</h1>
+        <p>
+          Preencha o formulário abaixo para <br />
+          agendar a sua mentoria
+        </p>
+      </header>
+
+      <form id="my-form">
+        <fieldset>
+          <div class="fieldseat-wrapper">
+            <legend>Informações pessoais</legend>
+            <div class="personal-wrapper">
+              <div class="input-wrapper-personal">
+                <label for="personal-information">Nome</label>
+                <input type="text" id="personal-information" required />
+              </div>
+
+              <div class="input-wrapper-personal">
+                <label for="personal-information">Sobrenome</label>
+                <input type="text" id="personal-information" required />
+              </div>
+            </div>
+          </div>
+
+          <div class="input-wrapper">
+            <label for="personal-email"
+              >Email <span>(digite um email válido)</span></label
+            >
+            <input type="email" id="personal-email" required />
+          </div>
+
+          <div class="input-wrapper">
+            <label for="personal-password"
+              >Senha <span>(mínimo de 6 caracteres)</span></label
+            >
+            <input type="password" id="personal-password" required />
+          </div>
+        </fieldset>
+
+        <fieldset class="input-mentorship">
+          <div class="input-wrapper">
+            <legend>Informações do mentor</legend>
+            <label for="personal-information"
+              >Nome do seu mentor <span>(só o primeiro nome)</span></label
+            >
+            <input type="text" id="personal-information" required />
+          </div>
+        </fieldset>
+
+        <fieldset class="schedule">
+          <div class="fieldseat-wrapper">
+            <legend>Seus horários disponíveis</legend>
+            <legend class="mentorship-title">Primeira mentoria</legend>
+
+            <div class="mentorship">
+              <div class="col-a">
+                <label for="iput-date">Data <span>(DD/MM/AAAA)</span></label>
+                <input type="date" id="iput-date" required />
+              </div>
+
+              <div class="col-b">
+                <label for="iput-begin">Das</label>
+                <input type="time" id="iput-begin" required />
+              </div>
+
+              <div class="col-c">
+                <label for="iput-end">Até</label>
+                <input type="time" id="iput-end" required />
+              </div>
+            </div>
+
+            <legend class="mentorship-title">Segunda mentoria</legend>
+
+            <div class="mentorship">
+              <div class="col-a">
+                <label for="iput-date">Data <span>(DD/MM/AAAA)</span></label>
+                <input type="date" id="iput-date" required />
+              </div>
+
+              <div class="col-b">
+                <label for="iput-begin">Das</label>
+                <input type="time" id="iput-begin" required />
+              </div>
+
+              <div class="col-c">
+                <label for="iput-end">Até</label>
+                <input type="time" id="iput-end" required />
+              </div>
+            </div>
+          </div>
+        </fieldset>
+      </form>
+
+      <footer>
+        <button class="button" type="submit" form="my-form">Salvar</button>
+      </footer>
+    </div>
+  </body>
+</html>
